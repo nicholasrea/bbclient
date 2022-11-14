@@ -25,7 +25,7 @@ function App() {
           >
           <div className="w-100" style={{maxWidth: "400px"}}>
             <Routes>
-              <Route exact path="/" element={<Home />} />
+              <Route exact path="/" element={<SignUp />} />
               <Route path="/signup" element={<SignUp />} />
               <Route path="/login" element={<Login />} />
               <Route path="/deposit" element={<Deposit />} />

@@ -19,12 +19,12 @@ function NavBar() {
   return (
     <Navbar>
       <Container>
-        <Link to="/">
-          <Navbar.Brand href="/">BadBank</Navbar.Brand>
+        <Link to="/signup">
+          <Navbar.Brand href="/signup">BadBank</Navbar.Brand>
         </Link>
         <Nav className="me-auto">
-            <Nav.Link disabled={user} href="/login">Log In</Nav.Link> 
             <Nav.Link disabled={user} href="/signup">Sign Up</Nav.Link>
+            <Nav.Link disabled={user} href="/login">Log In</Nav.Link> 
             <Nav.Link disabled={!user} href="/deposit">Deposit</Nav.Link>
             <Nav.Link disabled={!user} href="/withdraw">Withdraw</Nav.Link>
             <Nav.Link disabled={!user} onClick={() => {
